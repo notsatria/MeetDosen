@@ -33,28 +33,7 @@ class AdminController extends Controller
         return redirect()->back()->with('message', 'Data dosen berhasil ditambahkan');
     }
 
-    public function showAppointment()
-    {
-        $data = Appointment::all();
-        return view('admin.show-appointment')->with('appointmentData', $data);
-    }
 
-    public function approve($id)
-    {
-        $data = Appointment::find($id);
-        $data->status = "Approved";
-        $data->save();
-
-        return redirect()->back()->with('message', 'Appointment berhasil diapprove');
-    }
-    public function cancel($id)
-    {
-        $data = Appointment::find($id);
-        $data->status = "Canceled";
-        $data->save();
-
-        return redirect()->back()->with('message', 'Appointment berhasil dicancel');
-    }
 
     public function showDosen()
     {
@@ -99,4 +78,6 @@ class AdminController extends Controller
 
         return redirect()->back()->with('message', 'Data dosen berhasil diupdate');
     }
+
+   
 }

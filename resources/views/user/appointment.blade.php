@@ -36,6 +36,10 @@
             </form>
         @else
             <p class="text-center">Please log in to make an appointment</p>
+
+            <div class="mx-auto text-center">
+                <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
+            </div>
         @endif
     </div>
 </div> <!-- .page-section -->

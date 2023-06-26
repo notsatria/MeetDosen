@@ -17,21 +17,7 @@
         <div class="row p-0 m-0 proBanner" id="proBanner">
             <div class="col-md-12 p-0 m-0">
                 <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
-                    <div class="ps-lg-1">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <p class="mb-0 font-weight-medium me-3 buy-now-text">Free 24/7 customer support, updates,
-                                and more with this template!</p>
-                            <a href="https://www.bootstrapdash.com/product/corona-free/?utm_source=organic&utm_medium=banner&utm_campaign=buynow_demo"
-                                target="_blank" class="btn me-2 buy-now-btn border-0">Get Pro</a>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <a href="https://www.bootstrapdash.com/product/corona-free/"><i
-                                class="mdi mdi-home me-3 text-white"></i></a>
-                        <button id="bannerClose" class="btn border-0 p-0">
-                            <i class="mdi mdi-close text-white me-0"></i>
-                        </button>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -54,43 +40,45 @@
                 @endif
                 <form action="{{ url('upload-dosen') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <div style="padding: 15px;">
-                        <label for="">Nama Dosen</label>
-                        <input type="text" name="nama" placeholder="Nama Dosen" style="color:black;" required>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama Dosen</label>
+                        <input type="text" class="form-control" id="nama" name="nama"
+                            placeholder="Masukkan Nama Dosen" style="color:black; background-color: white" required>
                     </div>
-
-                    <div style="padding: 15px;">
-                        <label for="">No Telp</label>
-                        <input type="number" name="nomor" placeholder="Nomor Telepon" style="color:black;" required>
+                    <div class="mb-3">
+                        <label for="nomor" class="form-label">No Telp</label>
+                        <input type="text" class="form-control" id="nomor" name="nomor"
+                            placeholder="Masukkan No Telp" style="color:black; background-color: white" required>
                     </div>
-
-                    <div style="padding: 15px;">
-                        <label for="">NIDN</label>
-                        <input type="number" name="nidn" placeholder="NIDN" style="color:black;" required>
+                    <div class="mb-3">
+                        <label for="nidn" class="form-label">NIDN</label>
+                        <input type="text" class="form-control" id="nidn" name="nidn"
+                            placeholder="Masukkan NIDN" style="color:black; background-color: white" required>
                     </div>
-
-                    <div style="padding: 15px;">
-                        <label for="">Jurusan</label>
-                        <select name="jurusan" id="" style="color: black; width: 200px" required>
-                            <option value="">--Pilih Jurusan--</option>
+                    <div class="mb-3">
+                        <label for="jurusan" class="form-label">Jurusan</label>
+                        <select class="form-select" id="jurusan" name="jurusan"
+                            style="color:black; background-color: white">
+                            <option value="">Pilih Jurusan</option>
                             <option value="Administrasi Bisnis">Administrasi Bisnis</option>
                             <option value="Akuntansi">Akuntansi</option>
                             <option value="Teknik Informatika">Teknik Informatika</option>
                             <option value="Teknik Mesin">Teknik Mesin</option>
                             <option value="Teknik Sipil">Teknik Sipil</option>
                         </select>
+                        <!-- Tambahkan opsi jurusan lainnya sesuai kebutuhan -->
+
                     </div>
-
-                    <div style="padding: 15px;">
-                        <label for="">Foto Dosen</label>
-                        <input type="file" name="foto" style="" required>
+                    <div class="mb-3">
+                        <label for="fotoDosen" class="form-label">Foto Dosen</label>
+                        <input type="file" class="form-control text-dark" name="foto" id="fotoDosen"
+                            name="fotoDosen" required style="background-color: white">
                     </div>
-
-
                     <div style="padding: 15px;">
                         <input type="submit" class="btn btn-primary">
 
                     </div>
+
                 </form>
 
             </div>

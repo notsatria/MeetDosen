@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route untuk mahasiswa
+
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name("home");
 
 Route::get('/home', 'App\Http\Controllers\HomeController@redirect')->middleware('auth', 'verified');
@@ -24,7 +26,7 @@ Route::get('/cancel-appointment/{id}', 'App\Http\Controllers\HomeController@canc
 
 Route::post('/appointment', 'App\Http\Controllers\HomeController@appointment');
 
-
+// Batas route untuk mahasiswa
 
 
 Route::middleware([
@@ -37,15 +39,11 @@ Route::middleware([
     })->name('dashboard');
 });
 
+// Route untuk admin
+
 Route::get('/add-dosen', 'App\Http\Controllers\AdminController@add');
 
-Route::get('/show-appointment', 'App\Http\Controllers\AdminController@showAppointment');
-
 Route::get('/show-dosen', 'App\Http\Controllers\AdminController@showDosen');
-
-Route::get('/approve/{id}', 'App\Http\Controllers\AdminController@approve');
-
-Route::get('/cancel/{id}', 'App\Http\Controllers\AdminController@cancel');
 
 Route::get('/delete-dosen/{id}', 'App\Http\Controllers\AdminController@deleteDosen');
 
@@ -54,3 +52,13 @@ Route::get('/edit-dosen/{id}', 'App\Http\Controllers\AdminController@editDosen')
 Route::post('/update-dosen/{id}', 'App\Http\Controllers\AdminController@updateDosen');
 
 Route::post('/upload-dosen', 'App\Http\Controllers\AdminController@upload');
+
+// Batas route untuk admin
+
+// Route untuk dosen
+Route::get('/show-appointment', 'App\Http\Controllers\DosenController@showAppointment');
+
+Route::get('/approve/{id}', 'App\Http\Controllers\DosenController@approve');
+
+Route::get('/cancel/{id}', 'App\Http\Controllers\DosenController@cancel');
+

@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    @include('admin.css')
-</head> 
+    @include('dosen.css')
+</head>
 
 <body>
     <div class="container-scroller">
@@ -29,13 +29,13 @@
             </div>
         </div>
         <!-- partial:partials/_sidebar.html -->
-        @include('admin.sidebar')
+        @include('dosen.sidebar')
         <!-- partial -->
-        @include('admin.navbar')
+        @include('dosen.navbar')
         <!-- partial -->
-        @include('admin.body')
+        @include('dosen.body')
         <!-- container-scroller -->
-        @include('admin.js')
+        @include('dosen.js')
 </body>
 
 </html>

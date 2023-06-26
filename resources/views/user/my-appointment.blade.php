@@ -11,6 +11,8 @@
 
     <title>One Health - Medical Center HTML5 Template</title>
 
+    <link rel="icon" href="../assets/img/logo-meetdosen.png" type="image/ico" />
+
     <link rel="stylesheet" href="../assets/css/maicons.css">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.css">

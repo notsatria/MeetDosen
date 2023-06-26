@@ -32,7 +32,7 @@
                 <div class="col-md-4 py-3 py-md-0">
                     <div class="card-service wow fadeInUp">
                         <div class="circle-shape bg-accent text-white">
-                            <span class="mai-chatbox"></span>
+                            <span class="mai-chatbox-outline"></span>
                         </div>
                         <p><span>Tambah</span> Catatan Untuk Dosen</p>
                     </div>

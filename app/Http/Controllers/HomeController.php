@@ -13,12 +13,13 @@ class HomeController extends Controller
     public function redirect()
     {
         if (Auth::id()) {
-            if (Auth::user()->usertype == '0') {
+            if (Auth::user()->usertype == 'mahasiswa') {
                 $dosen = Dosen::all();
-
                 return view('user.home')->with("dataDosen", $dosen);
-            } else {
+            } elseif (Auth::user()->usertype == 'admin') {
                 return view('admin.home');
+            } elseif (Auth::user()->usertype == 'dosen') {
+                return view('dosen.home');
             }
         } else {
             return redirect()->back();

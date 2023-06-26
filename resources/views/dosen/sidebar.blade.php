@@ -1,7 +1,8 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="navbar-brand" href="#">Meet<span class="text-primary">Dosen</span></a>
-
+        <a class="sidebar-brand brand-logo" href="index.html"><img src="admin/assets/images/logo.svg" alt="logo" /></a>
+        <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="admin/assets/images/logo-mini.svg"
+                alt="logo" /></a>
     </div>
     <ul class="nav">
         <li class="nav-item profile">
@@ -13,9 +14,9 @@
                     </div>
                     <div class="profile-name">
 
-                        <h5 class="mb-0 font-weight-normal">Admin</h5>
+                        <h5 class="mb-0 font-weight-normal">Dosen</h5>
 
-                        <span>Admin</span>
+                        <span>Dosen</span>
                     </div>
                 </div>
                 <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i
@@ -62,20 +63,13 @@
         </li>
 
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ url('add-dosen') }}">
+            <a class="nav-link" href="{{ url('show-appointment') }}">
                 <span class="menu-icon">
-                    <i class="mdi mdi-pen"></i>
+                    <i class="mdi mdi-file-document"></i>
                 </span>
-                <span class="menu-title">Add Dosen</span>
+                <span class="menu-title">Appointments</span>
             </a>
         </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ url('show-dosen') }}">
-                <span class="menu-icon">
-                    <i class="mdi mdi-file-document-box"></i>
-                </span>
-                <span class="menu-title">Dosen</span>
-            </a>
-        </li>
+
     </ul>
 </nav>
