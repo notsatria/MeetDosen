@@ -24,7 +24,12 @@ Route::get('/my-appointment', 'App\Http\Controllers\HomeController@myAppointment
 
 Route::get('/cancel-appointment/{id}', 'App\Http\Controllers\HomeController@cancelAppointment');
 
+Route::get('/dosen-schedule', 'App\Http\Controllers\HomeController@showDosen');
+
+Route::get('/dosen-schedule/{nama}', 'App\Http\Controllers\HomeController@dosenSchedule');
+
 Route::post('/appointment', 'App\Http\Controllers\HomeController@appointment');
+
 
 // Batas route untuk mahasiswa
 
@@ -61,4 +66,3 @@ Route::get('/show-appointment', 'App\Http\Controllers\DosenController@showAppoin
 Route::get('/approve/{id}', 'App\Http\Controllers\DosenController@approve');
 
 Route::get('/cancel/{id}', 'App\Http\Controllers\DosenController@cancel');
-

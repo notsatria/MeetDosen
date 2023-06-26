@@ -81,4 +81,22 @@ class HomeController extends Controller
 
         return redirect()->back()->with('message', 'Appointment Request Canceled');
     }
+
+    public function showDosen()
+    {
+        $dosen = Dosen::all();
+
+        return view('user.show-dosen')->with("dataDosen", $dosen);
+    }
+
+    public function dosenSchedule($nama)
+    {
+        $dosen = Dosen::find($nama);
+        $appointmentData = Appointment::where('dosen', $nama)->get();
+
+        return view('user.dosen-schedule', [
+            'dataDosen' => $dosen,
+            'appointmentData' => $appointmentData
+        ]);
+    }
 }
