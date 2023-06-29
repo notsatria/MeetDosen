@@ -65,7 +65,8 @@
 
                                 </td>
                                 <td>
-                                    <img src="foto-dosen/{{ $dosen->photo }}" alt="">
+                                    <img src="{{ asset('/foto-dosen/' . $dosen->photo) }}" alt="">
+
 
                                 </td>
                                 <td>

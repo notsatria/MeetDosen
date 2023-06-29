@@ -7,7 +7,7 @@
                 <div class="item">
                     <div class="card-doctor">
                         <div class="header">
-                            <img src="foto-dosen/{{ $dosen->photo }}" alt="">
+                            <img src="{{ asset('/foto-dosen/' . $dosen->photo) }}" alt="">
                             <div class="meta">
                                 <a href="#"><span class="mai-call"></span></a>
                                 <a href="#"><span class="mai-logo-whatsapp"></span></a>

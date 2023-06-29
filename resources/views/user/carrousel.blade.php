@@ -1,4 +1,4 @@
-<div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/university.jpg);">
+<div class="page-hero bg-image overlay-dark" style="background-image: url({{ asset('/assets/img/university.jpg') }});">
     <div class="hero-section">
         <div class="container text-center wow zoomIn">
             <span class="subhead">Membuat Jadwal Konsultasi Dengan Dosen</span>

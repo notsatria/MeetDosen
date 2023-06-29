@@ -4,7 +4,7 @@
 <head>
     <base href="/public">
     @include('admin.css')
-
+    
     <style>
         label {
             display: inline-block;

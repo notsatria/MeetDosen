@@ -6,7 +6,7 @@
                     <div class="card-body py-0 px-0 px-sm-3">
                         <div class="row align-items-center">
                             <div class="col-4 col-sm-3 col-xl-2">
-                                <img src="admin/assets/images/dashboard/Group126@2x.png"
+                                <img src="{{ asset('admin/assets/images/dashboard/Group126@2x.png') }}"
                                     class="gradient-corona-img img-fluid" alt="">
                             </div>
                             <div class="col-5 col-sm-7 col-xl-8 p-0">
@@ -336,7 +336,8 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <img src="admin/assets/images/faces/face1.jpg" alt="image" />
+                                            <img
+                                                src="{{ asset('admin/assets/images/faces/face1.jpg"') }} alt="image" />
                                             <span class="ps-2">Henry Klein</span>
                                         </td>
                                         <td> 02312 </td>
@@ -357,7 +358,8 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <img src="admin/assets/images/faces/face2.jpg" alt="image" />
+                                            <img src="{{ asset('admin/assets/images/faces/face2.jpg') }}"
+                                                alt="image" />
                                             <span class="ps-2">Estella Bryan</span>
                                         </td>
                                         <td> 02312 </td>
@@ -378,7 +380,8 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <img src="admin/assets/images/faces/face5.jpg" alt="image" />
+                                            <img src="{{ asset('admin/assets/images/faces/face5.jpg') }}"
+                                                alt="image" />
                                             <span class="ps-2">Lucy Abbott</span>
                                         </td>
                                         <td> 02312 </td>
@@ -399,7 +402,8 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <img src="admin/assets/images/faces/face3.jpg" alt="image" />
+                                            <img src="{{ asset('admin/assets/images/faces/face3.jpg') }}"
+                                                alt="image" />
                                             <span class="ps-2">Peter Gill</span>
                                         </td>
                                         <td> 02312 </td>
@@ -420,7 +424,8 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <img src="admin/assets/images/faces/face4.jpg" alt="image" />
+                                            <img src="{{ asset('admin/assets/images/faces/face4.jpg') }}"
+                                                alt="image" />
                                             <span class="ps-2">Sallie Reyes</span>
                                         </td>
                                         <td> 02312 </td>
@@ -450,7 +455,7 @@
                         <div class="preview-list">
                             <div class="preview-item border-bottom">
                                 <div class="preview-thumbnail">
-                                    <img src="admin/assets/images/faces/face6.jpg" alt="image"
+                                    <img src="{{ asset('admin/assets/images/faces/face6.jpg') }}" alt="image"
                                         class="rounded-circle" />
                                 </div>
                                 <div class="preview-item-content d-flex flex-grow">
@@ -465,7 +470,7 @@
                             </div>
                             <div class="preview-item border-bottom">
                                 <div class="preview-thumbnail">
-                                    <img src="admin/assets/images/faces/face8.jpg" alt="image"
+                                    <img src="{{ 'admin/assets/images/faces/face8.jpg' }}" alt="image"
                                         class="rounded-circle" />
                                 </div>
                                 <div class="preview-item-content d-flex flex-grow">
@@ -480,7 +485,7 @@
                             </div>
                             <div class="preview-item border-bottom">
                                 <div class="preview-thumbnail">
-                                    <img src="admin/assets/images/faces/face9.jpg" alt="image"
+                                    <img src="{{ 'admin/assets/images/faces/face9.jpg' }}" alt="image"
                                         class="rounded-circle" />
                                 </div>
                                 <div class="preview-item-content d-flex flex-grow">
@@ -495,7 +500,7 @@
                             </div>
                             <div class="preview-item border-bottom">
                                 <div class="preview-thumbnail">
-                                    <img src="admin/assets/images/faces/face11.jpg" alt="image"
+                                    <img src="{{ 'admin/assets/images/faces/face11.jpg' }}" alt="image"
                                         class="rounded-circle" />
                                 </div>
                                 <div class="preview-item-content d-flex flex-grow">
@@ -519,21 +524,21 @@
                         <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel"
                             id="owl-carousel-basic">
                             <div class="item">
-                                <img src="admin/assets/images/dashboard/Rectangle.jpg" alt="">
+                                <img src="{{ asset('admin/assets/images/dashboard/Rectangle.jpg') }}" alt="">
                             </div>
                             <div class="item">
-                                <img src="admin/assets/images/dashboard/Img_5.jpg" alt="">
+                                <img src="{{ asset('admin/assets/images/dashboard/Img_5.jpg') }}" alt="">
                             </div>
                             <div class="item">
-                                <img src="admin/assets/images/dashboard/img_6.jpg" alt="">
+                                <img src="{{ asset('admin/assets/images/dashboard/img_6.jpg') }}" alt="">
                             </div>
                         </div>
                         <div class="d-flex py-4">
                             <div class="preview-list w-100">
                                 <div class="preview-item p-0">
                                     <div class="preview-thumbnail">
-                                        <img src="admin/assets/images/faces/face12.jpg" class="rounded-circle"
-                                            alt="">
+                                        <img src="{{ asset('admin/assets/images/faces/face12.jpg') }}"
+                                            class="rounded-circle" alt="">
                                     </div>
                                     <div class="preview-item-content d-flex flex-grow">
                                         <div class="flex-grow">

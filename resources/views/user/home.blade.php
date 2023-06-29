@@ -11,17 +11,17 @@
 
     <title>MeetDosen</title>
 
-    <link rel="icon" href="../assets/img/logo-meetdosen.png" type="image/ico" />
+    <link rel="icon" href="{{ asset('/assets/img/logo-meetdosen.png') }}" type="image/ico" />
 
-    <link rel="stylesheet" href="../assets/css/maicons.css">
+    <link rel="stylesheet" href="{{ asset('/assets/css/maicons.css') }}">
 
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ asset('/assets/css/bootstrap.css') }}">
 
-    <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="{{ asset('/assets/vendor/owl-carousel/css/owl.carousel.css') }}">
 
-    <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+    <link rel="stylesheet" href="{{ asset('/assets/vendor/animate/animate.css') }}">
 
-    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="{{ asset('/assets/css/theme.css') }}">
 
 </head>
 
@@ -47,7 +47,7 @@
 
     @include('user.carrousel')
 
-    <div class="page-section pb-0">
+    <div class="page-section pb-0" id="about">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 py-3 wow fadeInUp">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
                     <div class="img-place custom-img-1">
-                        <img src="../Dosen/3.png" height="250px" alt="">
+                        <img src="{{ asset('/Dosen/3.png') }}" height="250px" alt="">
                     </div>
                 </div>
             </div>
@@ -93,15 +93,14 @@
                         <li><a href="#">Terms & Condition</a></li>
                         <li><a href="#">Privacy</a></li>
                         <li><a href="#">Advertise</a></li>
-                        <li><a href="#">Join as Doctors</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-lg-3 py-3">
                     <h5>Our partner</h5>
                     <ul class="footer-menu">
-                        <li><a href="#">One-Fitness</a></li>
-                        <li><a href="#">One-Drugs</a></li>
-                        <li><a href="#">One-Live</a></li>
+                        <li><a href="#">Satria</a></li>
+                        <li><a href="#">Afifin</a></li>
+                        <li><a href="#">Fajar</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-lg-3 py-3">
@@ -124,20 +123,19 @@
 
             <hr>
 
-            <p id="copyright">Copyright &copy; 2020 <a href="https://macodeid.com/" target="_blank">MACode ID</a>.
-                All right reserved</p>
+
         </div>
     </footer>
 
-    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="{{ asset('/assets/js/jquery-3.5.1.min.js') }}"></script>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('/assets/js/bootstrap.bundle.min.js') }}"></script>
 
-    <script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="{{ asset('/assets/vendor/owl-carousel/js/owl.carousel.min.js') }}"></script>
 
-    <script src="../assets/vendor/wow/wow.min.js"></script>
+    <script src="{{ asset('/assets/vendor/wow/wow.min.js') }}"></script>
 
-    <script src="../assets/js/theme.js"></script>
+    <script src="{{ asset('/assets/js/theme.js') }}"></script>
 
 </body>
 

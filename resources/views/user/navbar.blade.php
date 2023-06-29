@@ -14,13 +14,13 @@
                     <a class="nav-link" href="{{ url('/home') }}">Home</a>
                 </li>
                 <li class="nav-item {{ request()->is('home#about') ? 'active' : '' }}">
-                    <a class="nav-link" href="">About Us</a>
+                    <a class="nav-link" href="/home#about">About Us</a>
                 </li>
                 <li class="nav-item {{ request()->is('home#dosen') ? 'active' : '' }}">
-                    <a class="nav-link" href="#dosen">Dosen</a>
+                    <a class="nav-link" href="/home#dosen">Dosen</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#appointment">Appointment</a>
+                    <a class="nav-link" href="/home#appointment">Appointment</a>
                 </li>
 
                 @if (Route::has('login'))
